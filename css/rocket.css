@@ -15,10 +15,10 @@
     right: 0;
 }
 a{
-
+    color: green;
 }
 a.button{
-
+    color: blueviolet;
 }
 .rocket{
     position: absolute;
@@ -26,9 +26,10 @@ a.button{
     bottom: 20px;
     width: 20px;
     height: 100px;
-    background-color: blue;
+    background-color: red;
     transition: bottom 10000ms;
 }
+
 .rocket.flying{
     bottom: 1000px;
 }
