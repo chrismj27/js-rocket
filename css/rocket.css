@@ -1,4 +1,8 @@
+
+
 .left{
+    font-family: helvetica, arial, sans-serif;
+    text-align: center;
     background-color: aquamarine;
     position: fixed;
     width: 50%;
@@ -7,7 +11,8 @@
     left: 9;
 }
 .right{
-    background-color: aliceblue;
+    background-image: url('../img/sky.jpg');
+/*    background-color: aliceblue;*/
     position: fixed;
     width: 50%;
     height: 100%;
@@ -23,27 +28,54 @@ a.button{
 .rocket{
     position: absolute;
     left: 50%;
-    bottom: 20px;
-    width: 20px;
-    height: 100px;
-    background-color: red;
+    bottom: -125px;
+    width: 120px;
+    height: 450px;
+    margin-left: -60px;
+    background: url('../img/rocket-state1.png') no-repeat center center;
     transition: bottom 10000ms;
 }
-body.body-state1 .rocket{
-    transition: none;
+
+/*---------------------------*/
+/*rocket bg image*/
+body.body-state2 .rocket{
+    background-image: url('../img/rocket-state2.png');
 }
 
 body.body-state3 .rocket,
 body.body-state4 .rocket{
+    background-image: url('../img/rocket-state3.png');
+}
+
+body.body-state5 .rocket{
+    width: 1000px;
+    height:1000px;
+    margin-left: 0;
+    left: 0%;
+    background-image: url('../img/boom.png');
+}
+
+body.body-state1 .rocket{
+    transition: none;
+}
+
+/*----------------------------*/
+
+body.body-state2 .rocket{
+/*    bottom: 80px;*/
+}
+body.body-state3 .rocket,
+body.body-state4 .rocket{
     bottom: 1000px;
 }
-.ground{
-    background-color: green;
+.ground{ 
+    background-image: url('../img/ground.png');
+/*    background-color: green;*/
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20px;
+    height: 539px;
 }
 .state1,
 .state2,
