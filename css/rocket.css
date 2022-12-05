@@ -14,9 +14,12 @@ body{
 }
 
 .interface{
-    text-align: center;
-    padding: 20px;
+    text-align: center;   
+}
 
+.countdown{
+    text-align: center;
+    display: block;
 }
 
 a.button{
@@ -37,7 +40,6 @@ a:hover{
 
 .right{
     background-image: url('../img/sky.jpg');
-/*    background-color: aliceblue;*/
     position: fixed;
     width: 50%;
     height: 100%;
@@ -110,6 +112,7 @@ body.body-state4 .rocket{
     width: 400px;
     height: 400px;
     display: none;
+    
 
 }
 
@@ -121,6 +124,7 @@ body.body-state4 .rocket{
     width: 400px;
     height: 400px;
     display: none;
+    
 }
 
 .nervous.show{
@@ -136,10 +140,19 @@ body.body-state4 .rocket{
 .state3,
 .state4,
 .state5{
-   display: none; 
+/*   visibility: hidden; */
+   display: none;
 }
 body.body-state1 .state1{display: block;}
 body.body-state2 .state2{display: block;}
 body.body-state3 .state3{display: block;}
 body.body-state4 .state4{display: block;}
 body.body-state5 .state5{display: block;}
+
+.screen{
+    margin: 200px auto 700px auto;
+    bottom: -125px;
+    width: 70%;
+    height: 400px;
+    background-color: black;
+}

@@ -3,7 +3,10 @@
 <head>
     <title>Rocket Launch Sequence!</title>
     <link rel="stylesheet" href="css/rocket.css" type="text/css">
+    <script src="jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="js/rocket.js"></script>
+    <!-- <script type="text/javascript"src="js/jquery-3.6.1.min.js"></script> -->
+
 
 </head>
 <body class="body-state1">
@@ -13,11 +16,15 @@
             <a href="#" class="button" onclick="changeState(2);">Launch!</a>
         </div>
         <div class="interface state2">
-            <h1 id="countdown">10</h1>
+            <h1 class="countdown" id="countdown">10</h1>
             <a href="#" class="button" onclick="changeState(1);">Abort!</a>
         </div>
         <div class="interface state3">
             <h1>Lift Off!</h1>
+            <a href="#" class="button" style="visibility: hidden;">LOREM IPSUM</a>
+            <!-- ^^^This is a placeholder so that elements below the button do not shift position
+            as they would if ^display^ is set to ^none^. The visibility style will hide the button
+            while maintining the space. The dummy text is there to keep the button height consistent.-->
         </div>
         <div class="interface state4">
             <h1>Well done!</h1>
@@ -26,6 +33,9 @@
         <div class="interface state5">
             <h1>Oh no!!</h1>
             <a href="#" class="button" onclick="changeState(1);">Try again!</a>
+        </div>
+        <div class="screen">
+            <!--  -->
         </div>
     </div>
     <div class="right">
