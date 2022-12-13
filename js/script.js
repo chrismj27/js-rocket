@@ -9,7 +9,7 @@ var car = {
     numberOfWheels: 4,
     seats: [
         'seat 1', 
-        'seat2', 
+        'seat 2', 
         'seat 3', 
         'seat 4'
     ],
